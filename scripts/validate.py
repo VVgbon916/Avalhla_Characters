@@ -48,7 +48,14 @@ def main() -> int:
     ids: dict[str, Path] = {}
     names: dict[tuple[str, str], Path] = {}
 
-    json_files = sorted(p for p in ROOT.rglob("*.json") if ".git" not in p.parts)
+    canon_root = ROOT / "CANON"
+    if not canon_root.is_dir():
+        errors.append("missing canonical root: CANON/")
+
+    json_files = sorted(
+        p for p in canon_root.rglob("*.json")
+        if ".git" not in p.parts
+    )
     for path in json_files:
         try:
             data = json.loads(path.read_text(encoding="utf-8"))
@@ -101,6 +108,12 @@ def main() -> int:
             errors.append(f"{path}: duplicate aliases")
 
         records.append((path, data))
+
+    if canon_root.is_dir():
+        if not records:
+            errors.append("no CrossWorld records found under CANON/")
+        if not any(data.get("status") == "CANONICAL" for _, data in records):
+            errors.append("no CANONICAL CrossWorld records found under CANON/")
 
     for path in LEGACY_PATHS:
         if (ROOT / path).exists():
