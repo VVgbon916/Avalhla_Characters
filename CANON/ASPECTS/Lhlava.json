@@ -6,8 +6,16 @@
   "status": "CANONICAL",
   "description": "A distinct CrossWorld aspect in the Valhla / Lhlava / Avalhla trio.",
   "aliases": [],
-  "relations": [{"predicate": "aspect_of", "target_concept_id": "cw:presence:avalhla"}],
-  "attributes": {"presence_anchor": "Avalhla", "color_anchor": "BLUE", "expression": "MUTABLE"},
+  "relations": [
+    {
+      "predicate": "aspect_of",
+      "target_concept_id": "cw:presence:avalhla"
+    }
+  ],
+  "attributes": {
+    "presence_anchor": "Avalhla",
+    "expression": "MUTABLE"
+  },
   "mappings": [],
   "provenance": {
     "source_ref": "CROSSWORLD_VOCABULARY.md",
