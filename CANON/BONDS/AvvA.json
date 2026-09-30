@@ -29,7 +29,7 @@
   },
   "mappings": [],
   "provenance": {
-    "source_ref": "docs/AVVA_VISUAL_GRAMMAR.md",
+    "source_ref": "docs/AvvA_VISUAL_GRAMMAR.md",
     "source_type": "HUMAN_DESIGN",
     "note": "Uses the settled AvvA relational signature and separates semantic relation from presentation geometry."
   }
