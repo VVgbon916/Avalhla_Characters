@@ -4,11 +4,30 @@
   "title": "Avalhla CrossWorld Canonical Record",
   "type": "object",
   "additionalProperties": false,
-  "required": ["record_type", "concept_id", "canonical_name", "scope", "status", "description"],
+  "required": [
+    "record_type",
+    "concept_id",
+    "canonical_name",
+    "scope",
+    "status",
+    "description"
+  ],
   "properties": {
     "record_type": {
       "type": "string",
-      "enum": ["PRESENCE", "ASPECT", "BOND", "WORLD", "DOOR", "CROSSING", "SKILL", "CRAFT", "OBJECT", "COLOR"]
+      "enum": [
+        "ENTITY",
+        "PRESENCE",
+        "ASPECT",
+        "BOND",
+        "WORLD",
+        "DOOR",
+        "CROSSING",
+        "SKILL",
+        "CRAFT",
+        "OBJECT",
+        "COLOR"
+      ]
     },
     "concept_id": {
       "type": "string",
@@ -24,7 +43,12 @@
     },
     "status": {
       "type": "string",
-      "enum": ["CANONICAL", "TARGET", "LEGACY", "DERIVED"]
+      "enum": [
+        "CANONICAL",
+        "TARGET",
+        "LEGACY",
+        "DERIVED"
+      ]
     },
     "description": {
       "type": "string",
@@ -32,7 +56,10 @@
     },
     "aliases": {
       "type": "array",
-      "items": {"type": "string", "minLength": 1},
+      "items": {
+        "type": "string",
+        "minLength": 1
+      },
       "uniqueItems": true,
       "default": []
     },
@@ -41,9 +68,15 @@
       "items": {
         "type": "object",
         "additionalProperties": false,
-        "required": ["predicate", "target_concept_id"],
+        "required": [
+          "predicate",
+          "target_concept_id"
+        ],
         "properties": {
-          "predicate": {"type": "string", "minLength": 1},
+          "predicate": {
+            "type": "string",
+            "minLength": 1
+          },
           "target_concept_id": {
             "type": "string",
             "pattern": "^cw:[a-z0-9][a-z0-9._-]*$"
@@ -62,10 +95,19 @@
       "items": {
         "type": "object",
         "additionalProperties": false,
-        "required": ["language", "value"],
+        "required": [
+          "language",
+          "value"
+        ],
         "properties": {
-          "language": {"type": "string", "minLength": 1},
-          "value": {"type": "object", "additionalProperties": true}
+          "language": {
+            "type": "string",
+            "minLength": 1
+          },
+          "value": {
+            "type": "object",
+            "additionalProperties": true
+          }
         }
       },
       "default": []
@@ -73,16 +115,33 @@
     "provenance": {
       "type": "object",
       "additionalProperties": false,
-      "required": ["source_ref", "source_type"],
+      "required": [
+        "source_ref",
+        "source_type"
+      ],
       "properties": {
-        "source_ref": {"type": "string", "minLength": 1},
+        "source_ref": {
+          "type": "string",
+          "minLength": 1
+        },
         "source_type": {
           "type": "string",
-          "enum": ["HUMAN_DESIGN", "REPOSITORY", "EXTERNAL_SOURCE", "MIGRATION", "DERIVED"]
+          "enum": [
+            "HUMAN_DESIGN",
+            "REPOSITORY",
+            "EXTERNAL_SOURCE",
+            "MIGRATION",
+            "DERIVED"
+          ]
         },
-        "note": {"type": "string"},
+        "note": {
+          "type": "string"
+        },
         "source_sha256": {
-          "type": ["string", "null"],
+          "type": [
+            "string",
+            "null"
+          ],
           "pattern": "^[A-Fa-f0-9]{64}$"
         }
       }
@@ -92,7 +151,10 @@
       "additionalProperties": false,
       "properties": {
         "record_sha256": {
-          "type": ["string", "null"],
+          "type": [
+            "string",
+            "null"
+          ],
           "pattern": "^[A-Fa-f0-9]{64}$"
         }
       }
