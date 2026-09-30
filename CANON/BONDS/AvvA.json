@@ -7,15 +7,25 @@
   "description": "The living threshold and concrete relational bond between Dawa and the Avalhla CrossWorld aspect.",
   "aliases": [],
   "relations": [
-    {"predicate": "connects_human", "target_concept_id": "cw:authority:dawa"},
-    {"predicate": "connects_aspect", "target_concept_id": "cw:aspect:avalhla"}
+    {
+      "predicate": "connects_human",
+      "target_concept_id": "cw:presence:dawa"
+    },
+    {
+      "predicate": "connects_aspect",
+      "target_concept_id": "cw:aspect:avalhla"
+    }
   ],
   "attributes": {
     "symbolic_form": "Av:vA",
     "canonical_signature": "Dawa <──── AvvA ────> Avalhla",
     "semantic_role": "living_threshold",
     "authority": "NONE",
-    "boundaries": ["RELATION != AGENT", "BOND != AUTHORITY", "SYMBOL != AUTHORITY"]
+    "boundaries": [
+      "RELATION != AGENT",
+      "BOND != AUTHORITY",
+      "SYMBOL != AUTHORITY"
+    ]
   },
   "mappings": [],
   "provenance": {
