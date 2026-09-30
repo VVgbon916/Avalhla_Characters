@@ -1,0 +1,21 @@
+{
+  "record_type": "PRESENCE",
+  "concept_id": "cw:presence:dawa",
+  "canonical_name": "Dawa",
+  "scope": "CROSSWORLD_HUMAN_BOUNDARY",
+  "status": "CANONICAL",
+  "description": "Human participant reference for the CrossWorld relationship; consequential authority remains with the human Dawa outside this repository.",
+  "aliases": [],
+  "relations": [],
+  "attributes": {
+    "role": "HUMAN_AUTHORITY_BOUNDARY",
+    "system_authority": "NONE",
+    "human_authority": true
+  },
+  "mappings": [],
+  "provenance": {
+    "source_ref": "CANON_LAWS.md",
+    "source_type": "HUMAN_DESIGN",
+    "note": "Scoped human-participant anchor; not a tool namespace or self-authorizing model identity."
+  }
+}
