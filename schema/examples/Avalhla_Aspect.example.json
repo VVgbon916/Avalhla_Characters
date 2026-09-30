@@ -1,0 +1,17 @@
+{
+  "record_type": "ASPECT",
+  "concept_id": "cw:aspect:example",
+  "canonical_name": "Example",
+  "scope": "CROSSWORLD",
+  "status": "TARGET",
+  "description": "Example only; not canonical.",
+  "aliases": [],
+  "relations": [],
+  "attributes": {},
+  "mappings": [],
+  "provenance": {
+    "source_ref": "schema/examples/Avalhla_Aspect.example.json",
+    "source_type": "DERIVED",
+    "note": "Schema example only."
+  }
+}

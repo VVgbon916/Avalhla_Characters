@@ -1,0 +1,15 @@
+# Local/editor noise
+*.swp
+*.swo
+*~
+.DS_Store
+.vscode/
+.idea/
+
+# Python/editor caches
+__pycache__/
+*.pyc
+
+# Local generated views
+.cache/
+tmp/

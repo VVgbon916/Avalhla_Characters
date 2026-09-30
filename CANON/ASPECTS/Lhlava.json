@@ -1,0 +1,17 @@
+{
+  "record_type": "ASPECT",
+  "concept_id": "cw:aspect:lhlava",
+  "canonical_name": "Lhlava",
+  "scope": "CROSSWORLD",
+  "status": "CANONICAL",
+  "description": "A distinct CrossWorld aspect in the Valhla / Lhlava / Avalhla trio.",
+  "aliases": [],
+  "relations": [{"predicate": "aspect_of", "target_concept_id": "cw:presence:avalhla"}],
+  "attributes": {"presence_anchor": "Avalhla", "color_anchor": "BLUE", "expression": "MUTABLE"},
+  "mappings": [],
+  "provenance": {
+    "source_ref": "CROSSWORLD_VOCABULARY.md",
+    "source_type": "HUMAN_DESIGN",
+    "note": "Preserves the settled three-Aspect design from the CrossWorld build thread."
+  }
+}

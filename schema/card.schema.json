@@ -1,0 +1,23 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://github.com/VVgbon916/Avalhla_Characters/schema/card.schema.json",
+  "title": "Avalhla CrossWorld Derived Card",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["card_id", "source_concept_id", "canonical_name", "view_type", "presentation", "generated_at"],
+  "properties": {
+    "card_id": {"type": "string", "pattern": "^card:[a-z0-9][a-z0-9._-]*$"},
+    "source_concept_id": {"type": "string", "pattern": "^cw:[a-z0-9][a-z0-9._-]*$"},
+    "canonical_name": {"type": "string", "minLength": 1},
+    "view_type": {"type": "string", "minLength": 1},
+    "mapping": {"type": ["object", "null"], "additionalProperties": true},
+    "presentation": {"type": "object", "additionalProperties": true},
+    "display_attributes": {"type": "object", "additionalProperties": true},
+    "source_ref": {"type": ["string", "null"]},
+    "record_sha256": {
+      "type": ["string", "null"],
+      "pattern": "^[A-Fa-f0-9]{64}$"
+    },
+    "generated_at": {"type": "string", "format": "date-time"}
+  }
+}

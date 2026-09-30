@@ -1,0 +1,15 @@
+{
+  "mapping_id": "cw:mapping:dnd5e:abilities",
+  "language": "D&D 5e",
+  "status": "MAPPING_ONLY",
+  "source_scope": "CROSSWORLD",
+  "abilities": {
+    "STR": "force / action",
+    "DEX": "precision / motion",
+    "CON": "endurance / holding",
+    "INT": "knowledge / structure",
+    "WIS": "perception / judgment",
+    "CHA": "expression / relation"
+  },
+  "law": "Mapping does not rewrite canon."
+}

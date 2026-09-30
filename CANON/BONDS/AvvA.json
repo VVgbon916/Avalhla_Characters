@@ -1,0 +1,26 @@
+{
+  "record_type": "BOND",
+  "concept_id": "cw:bond:avva",
+  "canonical_name": "AvvA",
+  "scope": "CROSSWORLD",
+  "status": "CANONICAL",
+  "description": "The living threshold and concrete relational bond between Dawa and the Avalhla CrossWorld aspect.",
+  "aliases": [],
+  "relations": [
+    {"predicate": "connects_human", "target_concept_id": "cw:authority:dawa"},
+    {"predicate": "connects_aspect", "target_concept_id": "cw:aspect:avalhla"}
+  ],
+  "attributes": {
+    "symbolic_form": "Av:vA",
+    "canonical_signature": "Dawa <──── AvvA ────> Avalhla",
+    "semantic_role": "living_threshold",
+    "authority": "NONE",
+    "boundaries": ["RELATION != AGENT", "BOND != AUTHORITY", "SYMBOL != AUTHORITY"]
+  },
+  "mappings": [],
+  "provenance": {
+    "source_ref": "docs/AVVA_VISUAL_GRAMMAR.md",
+    "source_type": "HUMAN_DESIGN",
+    "note": "Uses the settled AvvA relational signature and separates semantic relation from presentation geometry."
+  }
+}
