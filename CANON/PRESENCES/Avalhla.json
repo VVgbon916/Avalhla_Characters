@@ -1,0 +1,21 @@
+{
+  "record_type": "PRESENCE",
+  "concept_id": "cw:presence:avalhla",
+  "canonical_name": "Avalhla",
+  "scope": "CROSSWORLD_PRESENCE",
+  "status": "CANONICAL",
+  "description": "CrossWorld presence anchor used to relate distinct aspects without collapsing their identities.",
+  "aliases": [],
+  "relations": [],
+  "attributes": {
+    "display_name": "Avalhla",
+    "color_anchor": "BLUE",
+    "note": "This is a CrossWorld scope anchor; Avalhla Core runtime identity remains outside this repository."
+  },
+  "mappings": [],
+  "provenance": {
+    "source_ref": "Crossworld_Character_Map.md",
+    "source_type": "HUMAN_DESIGN",
+    "note": "Scoped identity anchor for the three CrossWorld aspects."
+  }
+}
